@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <title>Internship Confirmation Form</title>
@@ -9,54 +9,29 @@
 
     <h2>Internship Confirmation Form</h2>
 
-    <div>
-        <label for="studentName">Student Name:</label><br>
-        <input type="text" id="studentName" name="studentName" required>
-    </div>
-    <br>
+    <label>Student Name:</label><br>
+    <input type="text" required><br><br>
 
-    <div>
-        <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email" required>
-    </div>
-    <br>
+    <label>Email Address:</label><br>
+    <input type="email" required><br><br>
 
-    <div>
-        <label>Preferred Internship Type:</label><br>
-        <input type="radio" id="onSite" name="internshipType" value="On-Site" required>
-        <label for="onSite">On-Site</label><br>
+    <label>Preferred Internship Type:</label><br>
+    <input type="radio" name="type" value="On-Site"> On-Site<br>
+    <input type="radio" name="type" value="Remote"> Remote<br><br>
 
-        <input type="radio" id="remote" name="internshipType" value="Remote">
-        <label for="remote">Remote</label>
-    </div>
-    <br>
+    <label>Internship Duration:</label><br>
+    <select required>
+        <option>Select Duration</option>
+        <option>6 Weeks</option>
+        <option>3 Months</option>
+    </select><br><br>
 
-    <div>
-        <label for="duration">Internship Duration:</label><br>
-        <select id="duration" name="duration" required>
-            <option value="" disabled selected>Select duration</option>
-            <option value="6 Weeks">6 Weeks</option>
-            <option value="3 Months">3 Months</option>
-        </select>
-    </div>
-    <br>
+    <label>Skills of Interest:</label><br>
+    <input type="checkbox"> Web Development<br>
+    <input type="checkbox"> Data Analysis<br>
+    <input type="checkbox"> Mobile Apps<br><br>
 
-    <div>
-        <label>Skills of Interest:</label><br>
-        <input type="checkbox" id="webDev" name="skills" value="Web Development">
-        <label for="webDev">Web Development</label><br>
-
-        <input type="checkbox" id="dataAnalysis" name="skills" value="Data Analysis">
-        <label for="dataAnalysis">Data Analysis</label><br>
-
-        <input type="checkbox" id="mobileApps" name="skills" value="Mobile Apps">
-        <label for="mobileApps">Mobile Apps</label>
-    </div>
-    <br>
-
-    <div>
-        <input type="submit" value="Submit">
-    </div>
+    <input type="submit" value="Submit">
 
 </body>
 
